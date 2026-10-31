@@ -1,0 +1,23 @@
+Analysis version: FINAL_TEST_EVALUATION_20261024_V2
+Workflow freeze timestamp for this execution: 2026-10-24 19:37:17 CST
+TEST read timestamp for this execution: 2026-10-24 19:37:17 CST
+System timezone: America/Mexico_City
+Women TRAIN file: 01_women_TRAIN.csv
+Men TRAIN file: 03_men_TRAIN.csv
+Women TEST file: 02_women_TEST.csv
+Men TEST file: 04_men_TEST.csv
+Women TRAIN N: 190
+Women TEST N: 50
+Men TRAIN N: 83
+Men TEST N: 25
+Overall TRAIN-TEST ID overlap: 0
+All workflow specifications were fixed before TEST evaluation.
+This script may have been rerun after initial TEST access solely for reproducibility.
+No model specification was changed as a consequence of TEST results.
+No hyperparameter tuning was performed using TEST.
+No variable selection was performed using TEST.
+No transformation decision was made using TEST.
+No scaling parameter was estimated from TEST.
+HCY remained on its original scale.
+Predictive R2 was calculated as 1 - SSE/SST.
+Bootstrap confidence intervals are deferred to Script 14.

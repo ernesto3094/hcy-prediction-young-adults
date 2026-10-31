@@ -1,0 +1,7 @@
+Sex,Model,Caret_Method,C,Degree,Scale,Sigma
+Women,SVR-Linear,svmLinear,0.0625,NA,NA,NA
+Women,SVR-Polynomial,svmPoly,0.25,8,0.01,NA
+Women,SVR-RBF,svmRadial,1,NA,NA,0.0078125
+Men,SVR-Linear,svmLinear,0.0625,NA,NA,NA
+Men,SVR-Polynomial,svmPoly,0.25,4,0.1,NA
+Men,SVR-RBF,svmRadial,256,NA,NA,0.015625

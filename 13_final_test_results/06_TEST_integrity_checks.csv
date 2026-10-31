@@ -1,0 +1,17 @@
+Check,Value
+Women TRAIN N,190
+Women TEST N,50
+Men TRAIN N,83
+Men TEST N,25
+Women TRAIN-TEST ID overlap,0
+Men TRAIN-TEST ID overlap,0
+Overall TRAIN-TEST ID overlap,0
+Women duplicated TEST IDs,0
+Men duplicated TEST IDs,0
+Eligible predictors,21
+Models evaluated,7
+HCY transformed,No
+TEST used for tuning,No
+TEST used for variable selection,No
+TEST used for transformation decisions,No
+TEST used for scaling estimation,No

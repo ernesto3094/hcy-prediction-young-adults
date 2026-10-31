@@ -1,0 +1,21 @@
+Check,Value
+Women TEST observations,50
+Men TEST observations,25
+Women duplicate IDs,0
+Men duplicate IDs,0
+Models,7
+Bootstrap replicates requested per sex,2000
+Women valid replicates,2000
+Men valid replicates,2000
+Women sampling attempts,2000
+Men sampling attempts,2000
+Bootstrap metric rows,28000
+Expected bootstrap metric rows,28000
+Unique model pairs,21
+Pairwise bootstrap rows,84000
+Expected pairwise bootstrap rows,84000
+Model-metric CI rows,42
+Pairwise CI rows,126
+Raw TEST datasets read,No
+Models refitted,No
+Point estimates reproduce Script 13,Yes

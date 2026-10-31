@@ -1,0 +1,3 @@
+Sex,Absolute_Best_Degree,Absolute_Best_Mean_RMSE,SE_of_Absolute_Best,One_SE_Threshold,Selected_Degree,Selected_Degree_Mean_RMSE,Selection_Rule
+Women,2,2.7336333772473838,0.012695512923283426,2.746328890170667,2,2.7336333772473838,Lowest degree within one SE of minimum mean CV RMSE
+Men,2,3.1701540428941537,0.01127436667717204,3.1814284095713257,2,3.1701540428941537,Lowest degree within one SE of minimum mean CV RMSE

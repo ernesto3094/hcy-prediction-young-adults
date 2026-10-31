@@ -1,0 +1,15 @@
+Sex,Model,Specification
+Women,MLR,5 EN-selected transformed predictors; full-TRAIN centering/scaling
+Women,PR,5 EN-selected transformed predictors; additive degree-2 raw polynomial terms; full-TRAIN centering/scaling
+Women,SVR-Linear,caret svmLinear; C=0.0625; full-TRAIN center/scale
+Women,SVR-Polynomial,caret svmPoly; degree=8; scale=0.01; C=0.25; full-TRAIN center/scale
+Women,SVR-RBF,caret svmRadial; sigma=0.0078125; C=1; full-TRAIN center/scale
+Women,RF,21 original predictors; mtry=2; min.node.size=15; sample.fraction=0.80; trees=500
+Women,XGB,21 original predictors; nrounds=200; depth=1; eta=0.03; gamma=0; colsample=0.80; min.child.weight=1; subsample=0.60; alpha=1; lambda=5
+Men,MLR,2 EN-selected transformed predictors; full-TRAIN centering/scaling
+Men,PR,2 EN-selected transformed predictors; additive degree-2 raw polynomial terms; full-TRAIN centering/scaling
+Men,SVR-Linear,caret svmLinear; C=0.0625; full-TRAIN center/scale
+Men,SVR-Polynomial,caret svmPoly; degree=4; scale=0.1; C=0.25; full-TRAIN center/scale
+Men,SVR-RBF,caret svmRadial; sigma=0.015625; C=256; full-TRAIN center/scale
+Men,RF,21 original predictors; mtry=4; min.node.size=15; sample.fraction=0.80; trees=500
+Men,XGB,21 original predictors; nrounds=600; depth=1; eta=0.01; gamma=0.5; colsample=0.60; min.child.weight=3; subsample=1.00; alpha=1; lambda=0.5

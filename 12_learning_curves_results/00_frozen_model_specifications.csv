@@ -1,0 +1,15 @@
+Sex,Model,Specification
+Women,MLR,BMI + VisceralFat + MCHC + GLU + sqrt(LDL)
+Women,PR,Additive raw degree-2 polynomial terms
+Women,SVR-Linear,C=0.0625
+Women,SVR-Polynomial,C=0.25; degree=8; scale=0.01; offset=1
+Women,SVR-RBF,C=1; sigma=0.0078125
+Women,RF,mtry=2; min.node.size=15; sample.fraction=0.80; trees=500
+Women,XGB,nrounds=200; depth=1; eta=0.03; gamma=0; colsample=0.80; child=1; subsample=0.60; alpha=1; lambda=5
+Men,MLR,BMI + log(HDL)
+Men,PR,Additive raw degree-2 polynomial terms
+Men,SVR-Linear,C=0.0625
+Men,SVR-Polynomial,C=0.25; degree=4; scale=0.1; offset=1
+Men,SVR-RBF,C=256; sigma=0.015625
+Men,RF,mtry=4; min.node.size=15; sample.fraction=0.80; trees=500
+Men,XGB,nrounds=600; depth=1; eta=0.01; gamma=0.5; colsample=0.60; child=3; subsample=1.00; alpha=1; lambda=0.5

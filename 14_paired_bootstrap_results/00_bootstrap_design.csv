@@ -1,0 +1,15 @@
+Parameter,Value
+Bootstrap type,Nonparametric
+Sampling unit,Participant
+Replicates per sex,2000
+Women TEST N,50
+Men TEST N,25
+Bootstrap seed,123
+Confidence level,0.95
+CI method,Percentile
+Model comparisons,All 21 unique model pairs
+Difference definition,Model_A - Model_B
+Pairing,Same resampled indices across all models within each replicate
+Multiple-comparison adjustment,None; exploratory
+Raw TEST data reopened,No
+Models refitted,No
