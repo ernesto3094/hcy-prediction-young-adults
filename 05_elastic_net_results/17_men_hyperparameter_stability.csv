@@ -1,0 +1,16 @@
+Sex,Measure,Value
+Men,Number of CV seeds,10
+Men,Mean alpha,1
+Men,SD alpha,0
+Men,Median alpha,1
+Men,Minimum alpha,1
+Men,Maximum alpha,1
+Men,Mean lambda,0.42056254615334865
+Men,SD lambda,0.10013760960219703
+Men,Median lambda,0.44062364277735727
+Men,Minimum lambda,0.24537511066398168
+Men,Maximum lambda,0.5355666917706896
+Men,Mean selected predictors,2.8
+Men,SD selected predictors,1.6865480854231356
+Men,Minimum selected predictors,2
+Men,Maximum selected predictors,6

@@ -1,0 +1,62 @@
+MEN - PRELIMINARY GVLMA
+Original TRAIN predictors - before transformation
+
+
+Call:
+lm(formula = mlr_formula, data = men_train)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.9368 -1.6857 -0.4618  1.3223 16.6194 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)       1.258e+02  2.420e+02   0.520   0.6051  
+Age              -1.547e-01  2.280e-01  -0.679   0.5000  
+Height           -1.611e-01  3.811e-01  -0.423   0.6739  
+Weight            1.918e-01  4.660e-01   0.412   0.6820  
+BMI               4.677e-01  1.297e+00   0.361   0.7196  
+TotalFat         -4.471e-01  3.140e-01  -1.424   0.1596  
+VisceralFat      -3.884e-01  3.930e-01  -0.988   0.3270  
+MuscleMass       -4.554e-01  3.593e-01  -1.267   0.2098  
+Hgb              -2.532e+00  6.106e+00  -0.415   0.6799  
+Hct               2.557e+00  2.766e+00   0.925   0.3589  
+MCV              -1.389e+00  2.557e+00  -0.543   0.5889  
+MCH               2.193e+00  7.313e+00   0.300   0.7653  
+MCHC             -8.285e-01  6.450e+00  -0.128   0.8982  
+RDW_CV           -5.437e-01  8.053e-01  -0.675   0.5021  
+RBC              -1.205e+01  1.290e+01  -0.934   0.3539  
+PLT               1.054e-02  9.300e-03   1.133   0.2616  
+WBC               5.103e-02  2.891e-01   0.177   0.8604  
+GLU               1.234e-02  4.323e-02   0.286   0.7762  
+TotalCholesterol -3.801e-02  2.238e-02  -1.699   0.0945 .
+TRG               2.189e-04  1.164e-02   0.019   0.9851  
+HDL              -9.854e-03  4.335e-02  -0.227   0.8209  
+LDL               2.538e-02  2.248e-02   1.129   0.2633  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.34 on 61 degrees of freedom
+Multiple R-squared:  0.3997,	Adjusted R-squared:  0.193 
+F-statistic: 1.934 on 21 and 61 DF,  p-value: 0.02399
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma::gvlma(x = men_mlr) 
+
+                     Value  p-value                   Decision
+Global Stat        564.569 0.000000 Assumptions NOT satisfied!
+Skewness            77.772 0.000000 Assumptions NOT satisfied!
+Kurtosis           474.759 0.000000 Assumptions NOT satisfied!
+Link Function        8.950 0.002775 Assumptions NOT satisfied!
+Heteroscedasticity   3.088 0.078852    Assumptions acceptable.
+                        Value     p-value                   Decision
+Global Stat        564.568732 0.000000000 Assumptions NOT satisfied!
+Skewness            77.771635 0.000000000 Assumptions NOT satisfied!
+Kurtosis           474.758852 0.000000000 Assumptions NOT satisfied!
+Link Function        8.949845 0.002774931 Assumptions NOT satisfied!
+Heteroscedasticity   3.088400 0.078852292    Assumptions acceptable.

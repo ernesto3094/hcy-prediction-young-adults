@@ -1,0 +1,39 @@
+
+Call:
+lm(formula = mlr_formula, data = women_train_transformed)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5649 -1.5957 -0.5632  1.2829 18.5721 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)      -1.432e+02  7.296e+01  -1.962   0.0514 .
+Age               8.973e-02  1.499e-01   0.598   0.5504  
+Height            3.933e-01  1.863e-01   2.112   0.0362 *
+Weight           -4.792e-01  2.261e-01  -2.119   0.0356 *
+BMI               1.302e+00  5.883e-01   2.213   0.0282 *
+TotalFat         -8.196e-02  7.472e-02  -1.097   0.2743  
+VisceralFat       3.636e-01  4.137e-01   0.879   0.3806  
+MuscleMass       -9.719e-02  1.110e-01  -0.876   0.3824  
+Hgb              -3.341e+00  3.458e+00  -0.966   0.3353  
+Hct               8.828e-01  1.204e+00   0.733   0.4646  
+MCV               4.845e-01  8.618e-01   0.562   0.5747  
+MCH              -1.047e+00  2.497e+00  -0.419   0.6754  
+MCHC              2.471e+00  1.881e+00   1.314   0.1908  
+RDW_CV           -6.449e-03  2.563e-01  -0.025   0.9800  
+RBC               2.175e+00  1.265e+00   1.720   0.0873 .
+PLT               6.875e-01  1.152e+00   0.597   0.5516  
+WBC              -1.460e-01  8.658e-01  -0.169   0.8663  
+GLU              -4.972e-02  2.669e-02  -1.863   0.0642 .
+TotalCholesterol  5.285e-03  9.380e-03   0.563   0.5739  
+TRG              -6.110e-01  6.105e-01  -1.001   0.3183  
+HDL              -1.129e+00  9.030e-01  -1.250   0.2129  
+LDL               2.570e-01  1.498e-01   1.715   0.0881 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.649 on 168 degrees of freedom
+Multiple R-squared:  0.1785,	Adjusted R-squared:  0.07585 
+F-statistic: 1.739 on 21 and 168 DF,  p-value: 0.02927
+

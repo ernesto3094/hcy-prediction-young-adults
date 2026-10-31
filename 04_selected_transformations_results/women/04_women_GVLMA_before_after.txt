@@ -1,0 +1,130 @@
+WOMEN - GVLMA BEFORE AND AFTER SELECTED TRANSFORMATIONS
+
+=============================================
+BEFORE TRANSFORMATION
+=============================================
+
+
+Call:
+lm(formula = mlr_formula, data = women_train_original)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5733 -1.6122 -0.4555  1.2941 18.5513 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)      -1.492e+02  7.290e+01  -2.047   0.0422 *
+Age               8.841e-02  1.494e-01   0.592   0.5549  
+Height            3.948e-01  1.855e-01   2.129   0.0347 *
+Weight           -4.804e-01  2.254e-01  -2.131   0.0345 *
+BMI               1.314e+00  5.874e-01   2.237   0.0266 *
+TotalFat         -8.240e-02  7.459e-02  -1.105   0.2709  
+VisceralFat       3.456e-01  4.127e-01   0.837   0.4036  
+MuscleMass       -9.372e-02  1.106e-01  -0.848   0.3979  
+Hgb              -3.130e+00  3.452e+00  -0.907   0.3658  
+Hct               8.015e-01  1.204e+00   0.666   0.5064  
+MCV               5.711e-01  8.619e-01   0.663   0.5085  
+MCH              -1.284e+00  2.494e+00  -0.515   0.6074  
+MCHC              2.594e+00  1.877e+00   1.382   0.1687  
+RDW_CV           -1.845e-02  2.575e-01  -0.072   0.9430  
+RBC               2.260e+00  1.265e+00   1.787   0.0758 .
+PLT               2.845e-03  3.579e-03   0.795   0.4277  
+WBC              -5.082e-02  1.136e-01  -0.447   0.6552  
+GLU              -4.931e-02  2.652e-02  -1.859   0.0647 .
+TotalCholesterol  5.900e-03  9.632e-03   0.613   0.5410  
+TRG              -7.389e-03  6.333e-03  -1.167   0.2450  
+HDL              -2.203e-02  1.803e-02  -1.221   0.2237  
+LDL               1.259e-02  7.363e-03   1.710   0.0891 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.639 on 168 degrees of freedom
+Multiple R-squared:  0.1845,	Adjusted R-squared:  0.08259 
+F-statistic:  1.81 on 21 and 168 DF,  p-value: 0.02102
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma::gvlma(x = women_mlr_before) 
+
+                      Value  p-value                   Decision
+Global Stat        2303.644 0.000000 Assumptions NOT satisfied!
+Skewness            245.780 0.000000 Assumptions NOT satisfied!
+Kurtosis           2039.061 0.000000 Assumptions NOT satisfied!
+Link Function         9.772 0.001772 Assumptions NOT satisfied!
+Heteroscedasticity    9.032 0.002653 Assumptions NOT satisfied!
+                         Value     p-value                   Decision
+Global Stat        2303.644245 0.000000000 Assumptions NOT satisfied!
+Skewness            245.779913 0.000000000 Assumptions NOT satisfied!
+Kurtosis           2039.060543 0.000000000 Assumptions NOT satisfied!
+Link Function         9.772035 0.001771862 Assumptions NOT satisfied!
+Heteroscedasticity    9.031754 0.002653298 Assumptions NOT satisfied!
+
+
+=============================================
+AFTER SELECTED TRANSFORMATIONS
+=============================================
+
+
+Call:
+lm(formula = mlr_formula, data = women_train_transformed)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.5649 -1.5957 -0.5632  1.2829 18.5721 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)      -1.432e+02  7.296e+01  -1.962   0.0514 .
+Age               8.973e-02  1.499e-01   0.598   0.5504  
+Height            3.933e-01  1.863e-01   2.112   0.0362 *
+Weight           -4.792e-01  2.261e-01  -2.119   0.0356 *
+BMI               1.302e+00  5.883e-01   2.213   0.0282 *
+TotalFat         -8.196e-02  7.472e-02  -1.097   0.2743  
+VisceralFat       3.636e-01  4.137e-01   0.879   0.3806  
+MuscleMass       -9.719e-02  1.110e-01  -0.876   0.3824  
+Hgb              -3.341e+00  3.458e+00  -0.966   0.3353  
+Hct               8.828e-01  1.204e+00   0.733   0.4646  
+MCV               4.845e-01  8.618e-01   0.562   0.5747  
+MCH              -1.047e+00  2.497e+00  -0.419   0.6754  
+MCHC              2.471e+00  1.881e+00   1.314   0.1908  
+RDW_CV           -6.449e-03  2.563e-01  -0.025   0.9800  
+RBC               2.175e+00  1.265e+00   1.720   0.0873 .
+PLT               6.875e-01  1.152e+00   0.597   0.5516  
+WBC              -1.460e-01  8.658e-01  -0.169   0.8663  
+GLU              -4.972e-02  2.669e-02  -1.863   0.0642 .
+TotalCholesterol  5.285e-03  9.380e-03   0.563   0.5739  
+TRG              -6.110e-01  6.105e-01  -1.001   0.3183  
+HDL              -1.129e+00  9.030e-01  -1.250   0.2129  
+LDL               2.570e-01  1.498e-01   1.715   0.0881 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 2.649 on 168 degrees of freedom
+Multiple R-squared:  0.1785,	Adjusted R-squared:  0.07585 
+F-statistic: 1.739 on 21 and 168 DF,  p-value: 0.02927
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma::gvlma(x = women_mlr_after) 
+
+                      Value  p-value                   Decision
+Global Stat        2253.963 0.000000 Assumptions NOT satisfied!
+Skewness            242.954 0.000000 Assumptions NOT satisfied!
+Kurtosis           1992.350 0.000000 Assumptions NOT satisfied!
+Link Function         9.675 0.001868 Assumptions NOT satisfied!
+Heteroscedasticity    8.985 0.002723 Assumptions NOT satisfied!
+                         Value     p-value                   Decision
+Global Stat        2253.962892 0.000000000 Assumptions NOT satisfied!
+Skewness            242.953983 0.000000000 Assumptions NOT satisfied!
+Kurtosis           1992.349549 0.000000000 Assumptions NOT satisfied!
+Link Function         9.674774 0.001868153 Assumptions NOT satisfied!
+Heteroscedasticity    8.984585 0.002722666 Assumptions NOT satisfied!

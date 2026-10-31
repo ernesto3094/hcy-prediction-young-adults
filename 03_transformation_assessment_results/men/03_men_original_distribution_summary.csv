@@ -1,0 +1,14 @@
+Sex,Variable,N,Skewness,Kurtosis
+Men,Height,83,-0.6845,3.7344
+Men,Weight,83,1.0864,4.5803
+Men,BMI,83,1.0035,3.5756
+Men,TotalFat,83,0.5689,2.8512
+Men,VisceralFat,83,0.9371,3.4873
+Men,MuscleMass,83,-0.7095,2.9184
+Men,Hgb,83,-0.8791,4.2853
+Men,Hct,83,-0.905,4.8834
+Men,RBC,83,-0.7989,4.6167
+Men,WBC,83,0.9306,4.2957
+Men,GLU,83,0.5529,3.256
+Men,TRG,83,2.1255,8.7987
+Men,HDL,83,0.7351,3.0526

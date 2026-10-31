@@ -1,0 +1,130 @@
+MEN - GVLMA BEFORE AND AFTER SELECTED TRANSFORMATIONS
+
+=============================================
+BEFORE TRANSFORMATION
+=============================================
+
+
+Call:
+lm(formula = mlr_formula, data = men_train_original)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.9368 -1.6857 -0.4618  1.3223 16.6194 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)       1.258e+02  2.420e+02   0.520   0.6051  
+Age              -1.547e-01  2.280e-01  -0.679   0.5000  
+Height           -1.611e-01  3.811e-01  -0.423   0.6739  
+Weight            1.918e-01  4.660e-01   0.412   0.6820  
+BMI               4.677e-01  1.297e+00   0.361   0.7196  
+TotalFat         -4.471e-01  3.140e-01  -1.424   0.1596  
+VisceralFat      -3.884e-01  3.930e-01  -0.988   0.3270  
+MuscleMass       -4.554e-01  3.593e-01  -1.267   0.2098  
+Hgb              -2.532e+00  6.106e+00  -0.415   0.6799  
+Hct               2.557e+00  2.766e+00   0.925   0.3589  
+MCV              -1.389e+00  2.557e+00  -0.543   0.5889  
+MCH               2.193e+00  7.313e+00   0.300   0.7653  
+MCHC             -8.285e-01  6.450e+00  -0.128   0.8982  
+RDW_CV           -5.437e-01  8.053e-01  -0.675   0.5021  
+RBC              -1.205e+01  1.290e+01  -0.934   0.3539  
+PLT               1.054e-02  9.300e-03   1.133   0.2616  
+WBC               5.103e-02  2.891e-01   0.177   0.8604  
+GLU               1.234e-02  4.323e-02   0.286   0.7762  
+TotalCholesterol -3.801e-02  2.238e-02  -1.699   0.0945 .
+TRG               2.189e-04  1.164e-02   0.019   0.9851  
+HDL              -9.854e-03  4.335e-02  -0.227   0.8209  
+LDL               2.538e-02  2.248e-02   1.129   0.2633  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.34 on 61 degrees of freedom
+Multiple R-squared:  0.3997,	Adjusted R-squared:  0.193 
+F-statistic: 1.934 on 21 and 61 DF,  p-value: 0.02399
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma::gvlma(x = men_mlr_before) 
+
+                     Value  p-value                   Decision
+Global Stat        564.569 0.000000 Assumptions NOT satisfied!
+Skewness            77.772 0.000000 Assumptions NOT satisfied!
+Kurtosis           474.759 0.000000 Assumptions NOT satisfied!
+Link Function        8.950 0.002775 Assumptions NOT satisfied!
+Heteroscedasticity   3.088 0.078852    Assumptions acceptable.
+                        Value     p-value                   Decision
+Global Stat        564.568732 0.000000000 Assumptions NOT satisfied!
+Skewness            77.771635 0.000000000 Assumptions NOT satisfied!
+Kurtosis           474.758852 0.000000000 Assumptions NOT satisfied!
+Link Function        8.949845 0.002774931 Assumptions NOT satisfied!
+Heteroscedasticity   3.088400 0.078852292    Assumptions acceptable.
+
+
+=============================================
+AFTER SELECTED TRANSFORMATIONS
+=============================================
+
+
+Call:
+lm(formula = mlr_formula, data = men_train_transformed)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-6.6900 -1.6173 -0.5718  1.3019 16.3774 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)      131.578402 230.647694   0.570   0.5705  
+Age               -0.171450   0.227475  -0.754   0.4539  
+Height            -0.165763   0.361789  -0.458   0.6485  
+Weight             0.193247   0.435260   0.444   0.6586  
+BMI                0.246202   1.334428   0.184   0.8542  
+TotalFat          -0.287885   0.376995  -0.764   0.4480  
+VisceralFat       -1.899470   1.578044  -1.204   0.2334  
+MuscleMass        -0.311051   0.414210  -0.751   0.4556  
+Hgb               -1.853534   6.047990  -0.306   0.7603  
+Hct                2.538084   2.704709   0.938   0.3517  
+MCV               -1.366922   2.471081  -0.553   0.5822  
+MCH                1.834142   7.036917   0.261   0.7952  
+MCHC              -0.865192   6.184849  -0.140   0.8892  
+RDW_CV            -0.543830   0.800496  -0.679   0.4995  
+RBC              -13.977463  12.782167  -1.094   0.2785  
+PLT                0.008196   0.009275   0.884   0.3804  
+WBC                0.885777   2.018626   0.439   0.6624  
+GLU                0.010872   0.043031   0.253   0.8014  
+TotalCholesterol  -0.039074   0.022440  -1.741   0.0867 .
+TRG                0.844424   1.209660   0.698   0.4878  
+HDL               -0.385081   2.146933  -0.179   0.8582  
+LDL                0.020521   0.021801   0.941   0.3503  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.299 on 61 degrees of freedom
+Multiple R-squared:  0.4144,	Adjusted R-squared:  0.2128 
+F-statistic: 2.056 on 21 and 61 DF,  p-value: 0.01529
+
+
+ASSESSMENT OF THE LINEAR MODEL ASSUMPTIONS
+USING THE GLOBAL TEST ON 4 DEGREES-OF-FREEDOM:
+Level of Significance =  0.05 
+
+Call:
+ gvlma::gvlma(x = men_mlr_after) 
+
+                     Value p-value                   Decision
+Global Stat        555.129  0.0000 Assumptions NOT satisfied!
+Skewness            70.406  0.0000 Assumptions NOT satisfied!
+Kurtosis           476.021  0.0000 Assumptions NOT satisfied!
+Link Function        6.253  0.0124 Assumptions NOT satisfied!
+Heteroscedasticity   2.448  0.1177    Assumptions acceptable.
+                        Value    p-value                   Decision
+Global Stat        555.128781 0.00000000 Assumptions NOT satisfied!
+Skewness            70.406346 0.00000000 Assumptions NOT satisfied!
+Kurtosis           476.021389 0.00000000 Assumptions NOT satisfied!
+Link Function        6.253447 0.01239519 Assumptions NOT satisfied!
+Heteroscedasticity   2.447601 0.11770466    Assumptions acceptable.

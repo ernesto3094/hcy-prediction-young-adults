@@ -1,0 +1,6 @@
+Predictor,VIF,Tolerance,Interpretation
+BMI,6.952010009140836,0.14384329117552364,Potentially relevant multicollinearity
+VisceralFat,6.685640797523167,0.1495742936668794,Potentially relevant multicollinearity
+LDL,1.108685781187676,0.9019688147608002,Low multicollinearity
+GLU,1.038564723813968,0.9628672889328024,Low multicollinearity
+MCHC,1.0248778887025698,0.9757259972365453,Low multicollinearity
